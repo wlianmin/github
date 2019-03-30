@@ -10,8 +10,8 @@ import socket
 import os
 import sys
 
-reload(sys)
-sys.setdefaultencoding("utf-8")
+#reload(sys)
+#sys.setdefaultencoding("utf-8")
 
 def get_ip(host):
     """
@@ -35,7 +35,7 @@ def main():
                 result.write(ip.strip('\n') + " " + host)
 
     f = open('github_hosts.txt','a')
-    f.write("# GitHub End\n")
+    f.write("\n# GitHub End\n")
     f.close()
 
 if __name__ == "__main__":
